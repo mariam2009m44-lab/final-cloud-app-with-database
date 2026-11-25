@@ -183,4 +183,6 @@ def show_exam_result(request, course_id, submission_id):
         'submission': submission,
         'question_results': question_results,
         'percentage': percentage,
+        'grade': percentage,
+        'passed': percentage >= 80,
     })
